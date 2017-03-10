@@ -1,0 +1,48 @@
+object Form1: TForm1
+  Left = 346
+  Height = 244
+  Top = 193
+  Width = 320
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Minesweeper'
+  ClientHeight = 224
+  ClientWidth = 320
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  Position = poDefaultPosOnly
+  LCLVersion = '1.4.0.4'
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 80
+    Top = 0
+    Width = 80
+    BorderStyle = bsNone
+    DefaultColWidth = 22
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goSmoothScroll]
+    TabOrder = 0
+    OnDrawCell = StringGrid1DrawCell
+    OnMouseDown = StringGrid1MouseDown
+  end
+  object MainMenu1: TMainMenu
+    object Spiel_Menu: TMenuItem
+      Caption = 'Spiel'
+      ShortCut = 16467
+      object MenuItem2: TMenuItem
+        Caption = 'Neues Spiel'
+        ShortCut = 16462
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Beenden'
+        OnClick = MenuItem3Click
+      end
+    end
+    object MenuItem1: TMenuItem
+      Caption = 'Einstellungen'
+      OnClick = MenuItem1Click
+    end
+  end
+end

@@ -1,0 +1,93 @@
+object Form2: TForm2
+  Left = 753
+  Height = 153
+  Top = 160
+  Width = 163
+  BorderIcons = [biSystemMenu]
+  Caption = 'Einstellungen'
+  ClientHeight = 153
+  ClientWidth = 163
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '1.4.0.4'
+  object Edit1: TEdit
+    Left = 80
+    Height = 23
+    Top = 8
+    Width = 80
+    NumbersOnly = True
+    OnExit = Edit1Exit
+    TabOrder = 0
+    Text = '10'
+  end
+  object Edit2: TEdit
+    Left = 80
+    Height = 23
+    Top = 32
+    Width = 80
+    NumbersOnly = True
+    OnExit = Edit2Exit
+    TabOrder = 1
+    Text = '10'
+  end
+  object Edit3: TEdit
+    Left = 80
+    Height = 23
+    Top = 56
+    Width = 80
+    NumbersOnly = True
+    OnExit = Edit3Exit
+    TabOrder = 2
+    Text = '16'
+  end
+  object Label1: TLabel
+    Left = 4
+    Height = 15
+    Top = 8
+    Width = 33
+    Caption = 'Breite:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 4
+    Height = 15
+    Top = 32
+    Width = 32
+    Caption = 'Höhe:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 4
+    Height = 15
+    Top = 56
+    Width = 63
+    Caption = 'Minen in %:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 91
+    Height = 15
+    Top = 136
+    Width = 72
+    Caption = '© Lieven Hey'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 5
+    Height = 25
+    Top = 104
+    Width = 75
+    Caption = 'Ok'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 88
+    Height = 25
+    Top = 104
+    Width = 75
+    Caption = 'Abbrechen'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+end
